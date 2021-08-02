@@ -1,16 +1,5 @@
-from os import environ, path
-from dotenv import load_dotenv
-
-basedir = path.abspath(path.dirname(__file__))
-load_dotenv(path.join(basedir, '.env'))
-
-
-class Config:
-    """Base config."""
-    SECRET_KEY = environ.get('SECRET_KEY')
-
-
-class ProdConfig(Config):
-    FLASK_ENV = 'production'
-    DEBUG = False
-    TESTING = False
+MYSQL_DATABASE_HOST = 'db'
+MYSQL_DATABASE_USER = 'root'
+MYSQL_DATABASE_PASSWORD = 'root'
+MYSQL_DATABASE_PORT = 3306
+MYSQL_DATABASE_DB = 'oscarData'
