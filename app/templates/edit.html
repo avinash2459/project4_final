@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{oscar.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="actorName">Actor Name</label>
+            <input id="actorName" type="text" class="form-control" placeholder="Actor Name" name="actorName" value="{{oscar.actorName}}">
+        </div>
+        <div class="col">
+            <label for="movieName">Movie Name</label>
+            <input id="movieName" type="text" class="form-control" placeholder="Movie Name"
+                   name="movieName" value="{{oscar.movieName}}">
+        </div>
+        <div class="col">
+            <label for="sex">Sex</label>
+            <input id="sex" type="text" class="form-control" placeholder="Sex" name="sex" value="{{oscar.sex}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="age">Age</label>
+            <input id="age" type="text" class="form-control" placeholder="Age" name="age" value="{{oscar.age}}">
+        </div>
+        <div class="col">
+            <label for="year">Year</label>
+            <input id="year" type="text" class="form-control" placeholder="Year" name="year" value="{{oscar.year}}">
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
+
