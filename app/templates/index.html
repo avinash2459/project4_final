@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Actor Name</th>
+        <th scope="col">Movie Name</th>
+        <th scope="col">Sex</th>
+        <th scope="col">Age</th>
+        <th scope="col">Year</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for oscar in oscars %}
+    <tr>
+        <td><a href="view/{{oscar.id}}">{{ oscar.actorName }}</a></td>
+        <td>{{ oscar.movieName }}</td>
+        <td>{{ oscar.sex }}</td>
+        <td>{{ oscar.age }}</td>
+        <td>{{ oscar.year }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ oscar.actorName }} - {{ oscar.movieName }}</h5>
+
+    <ul class="list-group list-group-flush">
+         <li class="list-group-item">{{ oscar.movieName }}</li>
+        <li class="list-group-item">{{ oscar.sex }}</li>
+        <li class="list-group-item">{{ oscar.age }}</li>
+        <li class="list-group-item">{{ oscar.year }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{oscar.id}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+    <br />
+<form action="/delete/{{oscar.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
+
+
+{% endblock %}
+
