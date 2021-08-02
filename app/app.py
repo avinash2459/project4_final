@@ -1,11 +1,8 @@
 from flask import Flask, make_response, request, jsonify, render_template, redirect, url_for
 from forms import ContactForm
-import os
-
-SECRET_KEY = os.urandom(32)
 
 app = Flask(__name__, instance_relative_config=False)
-app.config['SECRET_KEY'] = SECRET_KEY
+app.config.from_object('config.ProdConfig')
 
 
 @app.route("/", methods=['GET'])
