@@ -12,3 +12,47 @@ nav{
 nav > a{
     padding-left:20px;
 }
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.title{
+    margin:50px 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:30vh;
+    border:1px solid royalblue;
+    border-radius: 20px;
+    padding:20px
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width:160px;
+    align-items:start;
+    border:none;
+}
+
+#submit{
+    height:30px;
+    width:100px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.errors {
+    color: red;
+}
