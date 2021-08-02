@@ -1,0 +1,14 @@
+.container{
+    border:1px solid gold;
+    border-radius: 20px;
+    margin:30px;
+    padding:20px
+}
+
+nav{
+    margin:30px 30px;
+}
+
+nav > a{
+    padding-left:20px;
+}
