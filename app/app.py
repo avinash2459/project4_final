@@ -19,7 +19,7 @@ def hello():
 
 nav = [
     {'name': 'Home', 'url': 'https://example.com/1'},
-    {'name': 'About', 'url': 'https://example.com/2'},
+    {'name': 'Contact', 'url': 'https://example.com/2'},
     {'name': 'Pics', 'url': 'https://example.com/3'}
 ]
 
@@ -45,6 +45,34 @@ def contact():
         "contact.jinja2", nav=nav,
         form=form,
         template="form-template"
+    )
+
+
+# Error Handling
+@app.errorhandler(404)
+def not_found(e):
+    """Page not found."""
+    return make_response(
+        render_template("404.html"),
+        404
+     )
+
+
+@app.errorhandler(400)
+def bad_request(e):
+    """Bad request."""
+    return make_response(
+        render_template("400.html"),
+        400
+    )
+
+
+@app.errorhandler(500)
+def server_error(e):
+    """Internal server error."""
+    return make_response(
+        render_template("500.html"),
+        500
     )
 
 
