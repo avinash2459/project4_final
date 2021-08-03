@@ -1,7 +1,18 @@
 # Project4 - Final - Oscar Awards Project
 ### - Avinash Sriram Chamarthy
 
-## Technologies Used: HTML, CSS, Python, Docker, MySQL, Flask, GIT
+## Technologies Used: HTML, CSS, Jinja2, Python, Docker, MySQL, Flask, GIT
+
+## In this project, the below tasks were done
+### 1. Created an example project as per the article and implemented the steps given
+### 2.Based on those steps provide in the article,The Oscar website is completely modified accordingly.
+
+## Modified the Oscar Website completely as per the Article:
+### 1.Used Flask Framework
+### 2.Rendered pages using Jinja
+### 3.Moved all the configuration data into config file.
+### 4.Separated the routes accordingly into separate categories(Ex: add,edit,delete)
+### 5.Used to concept of Demystifying Flask’s Application Factory and started the app using wsgi.py
 
 ## Steps followed from tutorial
 ### Step 1 - Creating Your First Flask Application
@@ -20,13 +31,6 @@
 ### Step 7 - Organizing Flask Apps with Blueprints
 ![step7](screenshots/step7.png)
 
-
-## Changes Made to oscar Website:
-### 1.Used Flask Framework
-### 2.Rendered pages using Jinja
-### 3.Moved all the configuration data into config file.
-### 4.Separated the routes accordingly into separate categories(Ex: add,edit,delete)
-### 5.Used to concept of Demystifying Flask’s Application Factory and started the app using wsgi.py
 
 ## Flask and Jinja2 Example:
 ![Example_project](screenshots/img.png)
