@@ -10,7 +10,8 @@
 ### 4.Separated the routes accordingly into separate categories(Ex: add,edit,delete)
 ### 5.Used to concept of Demystifying Flask’s Application Factory and started the app using wsgi.py
 
-
+## Flask and Jinja2 Example:
+![Home_page](screenshots/img.png)
 ## Separation of Concerns
 ![Home_page](screenshots/separationOfConcerns.png)
 ## Home Page:
