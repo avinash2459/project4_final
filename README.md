@@ -14,6 +14,9 @@
 ### 4.Separated the routes accordingly into separate categories(Ex: add,edit,delete)
 ### 5.Used to concept of Demystifying Flask’s Application Factory and started the app using wsgi.py
 
+## Screenshots of the project
+* [Click here](https://github.com/avinash2459/project4_final/blob/master/Project4%20_Final.pdf) for the PDF.
+
 ## Steps followed from tutorial
 ### Step 1 - Creating Your First Flask Application
 ![step1](screenshots/step1.png)
